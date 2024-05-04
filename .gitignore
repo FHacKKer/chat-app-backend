@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-store/
+
+# Output directories
+dist/
+build/
+coverage/
+
+# Environment variables and sensitive information
+.env
+.env.*.local
+
+# Operating system-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+
+# Log files
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+
+# Other common files
+*.lock
+*.pid
+*.seed
+*.tar
+*.gz
+*.bz2
+*.zip

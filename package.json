@@ -1,0 +1,51 @@
+{
+  "name": "chat-app-react-backend",
+  "version": "1.0.0",
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Socket.IO",
+    "WebSocket",
+    "Real-time",
+    "Backend",
+    "Server-side",
+    "REST API",
+    "Database",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Authentication",
+    "Authorization",
+    "Security",
+    "JWT",
+    "OAuth",
+    "Scalability",
+    "Performance",
+    "Web Application",
+    "Full-stack",
+    "Chat Application",
+    "Live Chat"
+  ],
+  "description": "This repository contains the back end for the \"chat-app-react\" project, a modern web application featuring real-time communication and robust server-side architecture. The back end is built with Node.js and serves as the backbone for handling real-time chat, user authentication, and data storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FHacKKer/chat-app-backend.git"
+  },
+  "author": "Faisal Shahzad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FHacKKer/chat-app-backend/issues"
+  },
+  "homepage": "https://github.com/FHacKKer/chat-app-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.3",
+    "socket.io": "^4.7.5"
+  }
+}

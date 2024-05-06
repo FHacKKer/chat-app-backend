@@ -18,7 +18,8 @@ const User = require("./modals/User");
 // Includes Folder File 
 const userSignup = require('./includes/userSignup');
 const userSignIn = require('./includes/userSignin');
-
+const saveMessage = require('./includes/saveMessage');
+const fetchMessages = require('./includes/getAllMessages');
 
 
 
@@ -37,13 +38,12 @@ io.on("connection", function (socket) {
     console.log(`User Connected ${socket.id}`);
 
     socket.on("getMessages", function (data) {
-        socket.emit("allMessages", chatData);
+        fetchMessages(socket)
+
     });
 
     socket.on("newMessage", (data) => {
-        // console.log(`New Message Received From User : ${data}`);
-
-        socket.broadcast.emit("newMessage", data);
+        saveMessage(data, socket);
     });
 
     socket.on("userSignUp", async (userData) => {
